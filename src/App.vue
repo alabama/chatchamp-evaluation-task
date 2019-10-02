@@ -1,7 +1,8 @@
 <template>
   <div id="chatchamp-wrapper">
     <ChatBubbleButton v-show="!isChatOpen" @click="handleChatToggle(true)">
-      <img alt="Chatchamp Icon" src="./assets/chatchamp.png" />
+      <!--img alt="Chatchamp Icon" src="./assets/chatchamp.svg" /-->
+      <img svg-inline class="icon" src="./assets/chatchamp.svg" alt="Chatchamp Icon" />
     </ChatBubbleButton>
     <ChatPanel v-show="isChatOpen" @close="handleChatToggle(false)"></ChatPanel>
   </div>
@@ -58,7 +59,8 @@ export default {
   @include transition(all 0.5s ease);
 }
 
-img {
+img,
+svg {
   max-width: 100%;
   height: auto;
 }
