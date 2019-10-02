@@ -1,0 +1,13 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": ["airbnb-base", "prettier", "plugin:vue/base"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  },
+  "parserOptions": {
+    "parser": "babel-eslint"
+  }
+}
